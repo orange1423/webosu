@@ -58,9 +58,9 @@
 
         <div class="main-page" id="main-page">
             <div class="main-content">
+                <!--
                 <div class="announcement">
-                    公告：请考虑<a href="https://osu.sayobot.cn/support">支持Sayobot</a>！Sayobot是本站的谱面源，请给服务器续命❤️
-                    <a href="https://paypal.me/Sayobot">Donate with Paypal</a>
+                    公告：这是橘子搭建的镜像站。如果你喜欢它，请支持原作者！<a href="https://osu.sayobot.cn/support">支持Sayobot</a>！
                 </div>
                 <br>
                 <div class="index-area">
@@ -79,10 +79,10 @@
                             </tr>
                         </thead>
                         <tbody id="activity-list">
-                            <!-- will be filled in script -->
                         </tbody>
                     </table>
                 </div>
+                -->
                 <div class="index-area">
                     <h2>随机曲目</h2>
                     <a onclick="genRandomList()" class="more" style="cursor:pointer;">换一换</a>
@@ -124,11 +124,11 @@
                     </div>
                 </div>
                 <div class="text">
-                    <a href="https://osu.sayobot.cn/support">支持小夜</a>！请给服务器续命❤️
-                    <a href="https://paypal.me/Sayobot">Donate to Sayobot with Paypal</a>
+                    这里是橘子搭建的镜像站，如果你喜欢它，请<a href="https://osu.sayobot.cn/support">支持原作者小夜</a>！
                 </div>
+                <div class="text">欢迎访问橘子的个人站点：<a href="https://xn--i8sr36a.wang/">橘子的小站</a>！
+                <div class="text">内测版v1.4.3.原作者开源版本： <a href="https://github.com/111116/webosu">Github</a>，橘子维护版本：<a href="https://github.com/orange1423/webosu">Github</a></div>
                 <div class="text">推荐使用最新版本 Firefox 或 Chrome.</div>
-                <div class="text">内测版v1.4.3. <a href="https://github.com/111116/osu">Github</a></div>
                 <div class="text">由<a href="https://osu.sayobot.cn/">Sayobot</a>提供谱面</div>
             </div>
             
@@ -193,6 +193,7 @@
             }
             let b={ip:"",title:"",version:"loading",score:0,combo:0,acc:0};
             showActivity([b,b,b,b,b,b,b,b,b,b])
+            /*
             function refreshLivescore(){
                 let xhr = new XMLHttpRequest();
                 xhr.responseType = 'text';
@@ -207,6 +208,7 @@
             }
             refreshLivescore();
             window.setInterval(refreshLivescore, 5000);
+            */
             // recently played
             if (window.localforage) {
                 let listhistory = document.getElementById("beatmap-list-history");
